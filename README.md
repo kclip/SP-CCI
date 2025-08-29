@@ -1,6 +1,6 @@
 # SP-CCI: Synthetic-Powered Conformal Counterfactual Inference
 
-This repository contains tidy, reproducible code to run experiments for the paper:
+This repository contains the code to run experiments for the paper:
 
 > **Synthetic Counterfactual Labels for Efficient Conformal Counterfactual Inference**
 
