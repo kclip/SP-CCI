@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sp-cci"
+version = "0.1.0"
+description = "Synthetic-Powered Conformal Counterfactual Inference (SP-CCI) experiments"
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = " "}]
+
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.6",
+    "tqdm>=4.66",
+    "scipy>=1.9",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+rt = [
+    "tensorflow>=2.11",
+    # Sionna is TF-based; install a version compatible with your TF & CUDA.
+    # Example: "sionna>=0.15"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203","W503"]

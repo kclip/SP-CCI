@@ -1,0 +1,3 @@
+# Optional: only needed for the wireless ray-tracing experiment
+tensorflow>=2.11
+# sionna>=0.15   # pick version compatible with your TF/CUDA
