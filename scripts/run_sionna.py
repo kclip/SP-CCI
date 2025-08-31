@@ -199,8 +199,8 @@ for seed in tqdm(range(n_trials), desc="Running trials"):
     width_lc = np.mean(qhi_vals - qlo_vals + 2 * eta_lc)
     width_aug = np.mean(qhi_vals - qlo_vals + 2 * eta_aug)
 
-    avg_width_lc.append(width_lc/10)
-    avg_width_aug.append(width_aug/10)
+    avg_width_lc.append(width_lc)
+    avg_width_aug.append(width_aug)
 
 # === Plot Width Distributions ===
 # === Configure plot font ===
